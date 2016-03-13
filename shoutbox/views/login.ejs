@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<% include menu %>
+<h1><%= title %></h1>
+<p>请在下面填写登录信息!!!</p>
+<% include messages %>
+<form action="/login" method="post">
+    <p><input type="text" name="username"></p>
+    <p><input type="password" name="pass"></p>
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>

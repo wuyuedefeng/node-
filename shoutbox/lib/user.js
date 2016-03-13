@@ -84,16 +84,16 @@ User.authenticate = function(name, pass, fn){
 }
 
 
-var tobi = new User({
-    name: '王森',
-    pass: 'i am wangsen',
-    age: '2'
-});
-tobi.save(function(err){
-    if (err) throw err;
-    console.log('user id: %d', tobi.id);
-})
+//var tobi = new User({
+//    name: '王森',
+//    pass: 'i am wangsen',
+//    age: '2'
+//});
+//tobi.save(function(err){
+//    if (err) throw err;
+//    console.log('user id: %d', tobi.id);
+//})
 
-User.getUserByName('王森', function(err, user){
-    console.log(user);
-});
+//User.getUserByName('王森', function(err, user){
+//    console.log(user);
+//});
