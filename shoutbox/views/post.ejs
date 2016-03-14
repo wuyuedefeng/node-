@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+<% include menu %>
+<h1><%= title %></h1>
+<p>Fill in the form below to add a new post</p>
+<% include messages %>
+<form action="/post" method="post">
+    <p><input type="text" name="title" placeholder="title" ></p>
+
+    <p><textarea name="body" placeholder="body"></textarea></p>
+
+    <p><input type="submit" value="post"></p>
+</form>
+</body>
+</html>
